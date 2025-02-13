@@ -22,7 +22,7 @@ export default function Dashboard() {
     const { count: lowStockItems, error } = await supabase
       .from("products")
       .select("*", { count: "exact", head: true })
-      .lt("quantity", "min_quantity");
+      .lt("quantity", 5);
 
     if (error) throw new Error(error.message);
 

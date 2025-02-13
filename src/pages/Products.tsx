@@ -147,7 +147,7 @@ export default function Products() {
                   </span>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  ${product.unit_price.toFixed(2)}
+                  ${product.unit_price?.toFixed(2)}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                   <button
